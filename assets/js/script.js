@@ -9,7 +9,7 @@ var taskFormHandler = function(event) {
   // Check if input values are empty strings
   if (!taskNameInput || !taskTypeInput) {
     alert("You need to fill out the task form!");
-    return fasle;
+    return false;
   }
 
   formEl.reset();
@@ -48,4 +48,4 @@ var createTaskEl = function (taskDataObj) {
   tasksToDoEl.appendChild(listItemEl);
 };
 
-formEl.addEventListener("sumbit", taskFormHandler);
+formEl.addEventListener("submit", taskFormHandler);
